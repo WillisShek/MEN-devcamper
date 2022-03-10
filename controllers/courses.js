@@ -54,7 +54,7 @@ exports.addCourse = asyncHandler(async (req, res, next) => {
 
 	if (!bootcamp) {
 		return next(
-			new ErrorResponse(`No bootcamp with the id of ${req.parms.bootcampId}`),
+			new ErrorResponse(`No bootcamp with the id of ${req.params.bootcampId}`),
 			404
 		);
 	}
